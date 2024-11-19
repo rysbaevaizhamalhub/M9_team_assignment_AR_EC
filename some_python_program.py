@@ -28,16 +28,18 @@ def button_click(number):
     e.insert(0, str(current) + str(number))
     # adds the old text to the new number together and displays it
 
-# Document what the following lines of code do here
+# 4 Document what the following lines of code do here
 def button_clear():
     # The line def button_clear(): This is defining a function named button_clear. When this function is called, a block of code indented underneath it will be executed; however, this depends on the implementation inside the function.
     e.delete(0, END)
     # The line e.delete(0, END) deletes the text inside the Entry widget e, starting from index 0 (the beginning of the text) to END (the end of the text), effectively clearing the entire input field.
 
-# Document what the following lines of code do here
+# 5 Document what the following lines of code do here
 def button_operator(operator):
     first_number = e.get()
+    # gets the number currently in the text box
     global f_num
+    # makes 'f_num' a global variable so we can use it in other parts of the program
     global num_operator
     f_num = int(first_number)
     num_operator = operator
