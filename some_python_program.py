@@ -14,7 +14,9 @@ root.title("Simple Calculator")
 
 # Document what the following lines of code do here
 e = Entry(root, width=35, borderwidth=5)
+# The line e = Entry(root, width=35, borderwidth=5) creates an Entry widget of width 35 characters and border width 5 pixels, placing it inside the parent widget root.
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+# The line e.grid(row=0, column=0, columnspan=3, padx=10, pady=10) places the Entry widget e in the grid at the position of the 0th row and 0th column, spans it across 3 columns, and adds padding on all sides of 10 pixels.
 
 # Document what the following lines of code do here
 def button_click(number):
@@ -24,7 +26,9 @@ def button_click(number):
 
 # Document what the following lines of code do here
 def button_clear():
+    # The line def button_clear(): This is defining a function named button_clear. When this function is called, a block of code indented underneath it will be executed; however, this depends on the implementation inside the function.
     e.delete(0, END)
+    # The line e.delete(0, END) deletes the text inside the Entry widget e, starting from index 0 (the beginning of the text) to END (the end of the text), effectively clearing the entire input field.
 
 # Document what the following lines of code do here
 def button_operator(operator):
