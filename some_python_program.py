@@ -7,11 +7,11 @@
 #
 # 1 Document what the following lines of code do here
 from tkinter import *
-# this line imports all classes, functions from tkinter module, which gives access to tools to build GUI
+# this line imports all classes functions from tkinter module, which gives access to tools to build GUI
 root = Tk()
-# creates the main window for application
+# creates the main window for the application
 root.title("Simple Calculator")
-# sets the title of main window to "Simple Calculator"
+# sets the title of the main window to "Simple Calculator"
 
 # 2 Document what the following lines of code do here
 e = Entry(root, width=35, borderwidth=5)
@@ -22,8 +22,11 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 # 3 Document what the following lines of code do here
 def button_click(number):
     current = e.get()
+    # gets whatever is currently in the text box
     e.delete(0, END)
+    # clears the text box so it's empty
     e.insert(0, str(current) + str(number))
+    # adds the old text to the new number together and displays it
 
 # Document what the following lines of code do here
 def button_clear():
