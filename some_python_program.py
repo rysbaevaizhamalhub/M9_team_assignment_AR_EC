@@ -5,28 +5,29 @@
 # Updated by:
 #
 #
-# Document what the following lines of code do here
+# 1 Document what the following lines of code do here
 from tkinter import *
-
+# Import everything from the tkinter module, which allows us to create GUI applications
 root = Tk()
-
+# Create the main application window where all components will appear
 root.title("Simple Calculator")
+# Set the title of the main window to "Simple Calculator," displayed at the top of the window
 
-# Document what the following lines of code do here
+# 2 Document what the following lines of code do here
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
-# Document what the following lines of code do here
+# 3 Document what the following lines of code do here
 def button_click(number):
     current = e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(number))
 
-# Document what the following lines of code do here
+# 4 Document what the following lines of code do here
 def button_clear():
     e.delete(0, END)
 
-# Document what the following lines of code do here
+# 5 Document what the following lines of code do here
 def button_operator(operator):
     first_number = e.get()
     global f_num
@@ -35,7 +36,7 @@ def button_operator(operator):
     num_operator = operator
     e.delete(0, END)
 
-# Document what the following lines of code do here
+# 6 Document what the following lines of code do here
 
 # you might want to consider adding documentation on a line by line basis since
 # this is a critical function for the program
@@ -53,7 +54,7 @@ def button_equal():
     else:
         e.insert(0, "Invalid!!!")
 
-# Document what the following lines of code do here
+# 7 Document what the following lines of code do here
 #
 # NOTE: We did not cover Lambda functins in class. A Lambda Function 
 # in Python programming is an anonymous function
@@ -77,14 +78,14 @@ button_add =  Button(root, text="+", padx=39, pady=20, command=lambda: button_op
 button_equal =  Button(root, text="   =   ", padx=79, pady=20, command=button_equal)
 button_clear =  Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
-# Document what the following lines of code do here
+# 8 Document what the following lines of code do here
 
 # See the description of a Lambda function above
 button_subtract =  Button(root, text="-", padx=40, pady=20, command=lambda: button_operator("-"))
 button_multiply =  Button(root, text="*", padx=40, pady=20, command=lambda: button_operator("*"))
 button_divide =  Button(root, text="/", padx=40, pady=20, command=lambda: button_operator("/"))
 
-# Document what the following lines of code do here
+# 9 Document what the following lines of code do here
 
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
@@ -107,6 +108,6 @@ button_subtract.grid(row=6, column=0)
 button_multiply.grid(row=6, column=1)
 button_divide.grid(row=6, column=2)
 
-# Document what the following line of code do here
+# 10 Document what the following line of code do here
 
 root.mainloop()
