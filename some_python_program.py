@@ -134,8 +134,14 @@ button_clear =  Button(root, text="Clear", padx=79, pady=20, command=button_clea
 
 # See the description of a Lambda function above
 button_subtract =  Button(root, text="-", padx=40, pady=20, command=lambda: button_operator("-"))
+# This is a line of code that creates a button labeled "/" in the Tkinter GUI application with specified padding, 
+# and when clicked it calls the function button_operator with the argument "/".
 button_multiply =  Button(root, text="*", padx=40, pady=20, command=lambda: button_operator("*"))
+# It makes this line of code create a button labeled "-",
+#  having specified padding, which calls a function button_operator with an argument "-" upon clicking.
 button_divide =  Button(root, text="/", padx=40, pady=20, command=lambda: button_operator("/"))
+# This is a line of code that creates a button labeled "/" in the Tkinter GUI application with specified padding, 
+# and when clicked it calls the function button_operator with the argument "/".
 
 # 9 Document what the following lines of code do here
 
