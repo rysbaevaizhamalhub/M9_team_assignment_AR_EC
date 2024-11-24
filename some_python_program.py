@@ -124,8 +124,11 @@ button_8 =  Button(root, text="8", padx=40, pady=20, command=lambda: button_clic
 button_9 =  Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
 button_0 =  Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0))
 button_add =  Button(root, text="+", padx=39, pady=20, command=lambda: button_operator("+"))
+# Create a button for the "+" operator. When clicked, it calls `button_operator("+")`.
 button_equal =  Button(root, text="   =   ", padx=79, pady=20, command=button_equal)
+# Create the "=" button. It spans more space (`padx=79`) and calls the `button_equal()` function.
 button_clear =  Button(root, text="Clear", padx=79, pady=20, command=button_clear)
+# Create a "Clear" button to reset the entry field when clicked.
 
 # 8 Document what the following lines of code do here
 
