@@ -193,3 +193,5 @@ button_divide.grid(row=6, column=2)
 # 10 Document what the following line of code do here
 
 root.mainloop()
+# The root.mainloop() function initiates the Tkinter event loop, 
+# allowing the GUI application to remain active and responsive to user interactions until the window is closed
