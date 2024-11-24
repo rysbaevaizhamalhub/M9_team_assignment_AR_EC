@@ -146,6 +146,9 @@ button_divide =  Button(root, text="/", padx=40, pady=20, command=lambda: button
 # 9 Document what the following lines of code do here
 
 button_1.grid(row=3, column=0)
+# Place button "1" in row 3, column 0 of the window grid.  
+
+# Repeat similar steps for placing all other buttons on the grid.
 button_2.grid(row=3, column=1)
 button_3.grid(row=3, column=2)
 
@@ -158,13 +161,34 @@ button_8.grid(row=1, column=1)
 button_9.grid(row=1, column=2)
 
 button_0.grid(row=4, column=0)
+
 button_add.grid(row=5, column=0)
+# Place the "+" button in row 5, which is below the numeric buttons.  
+# It occupies the first column of the row (column 0).  
+
 button_equal.grid(row=5, column=1, columnspan=2)
+# Place the "=" button in row 5, next to the "+" button.  
+# `column=1` specifies that it starts in the second column of row 5.  
+# `columnspan=2` makes the button span across the second and third columns.  
+# This wider button is meant to visually signify its importance in the calculator's layout.
+
 button_clear.grid(row=4, column=1, columnspan=2)
+# Place the "Clear" button in row 4, next to the "0" button.  
+# `column=1` specifies that it starts in the second column of row 4.  
+# `columnspan=2` makes the button span across the second and third columns.  
+# This wider button makes it easier for users to reset the calculator. 
 
 button_subtract.grid(row=6, column=0)
+# Place the "-" (subtract) button in row 6, below the "+" button.  
+# It occupies the first column of the row (column 0).  
+
 button_multiply.grid(row=6, column=1)
+# Place the "*" (multiply) button in row 6, next to the "-" button.  
+# It occupies the second column of the row (column 1).  
+
 button_divide.grid(row=6, column=2)
+# Place the "/" (divide) button in row 6, next to the "*" button.  
+# It occupies the third column of the row (column 2).  
 
 # 10 Document what the following line of code do here
 
