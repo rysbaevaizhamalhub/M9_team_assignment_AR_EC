@@ -59,18 +59,49 @@ def button_operator(operator):
 # you might want to consider adding documentation on a line by line basis since
 # this is a critical function for the program
 def button_equal():
+    # This line of code defines a function named button_equal which should execute a certain action upon calling, for example,
+    # handling the logic of the equal button in a calculator.
     second_number = e.get()
+    # The code second_number = e.get() retrieves the current value from a user interface element
+    # like an entry field or text box represented by 'e' and assigns that value to the variable second_number.
     e.delete(0, END)
+    # The line of code e.delete(0, END) removes all the text from the user interface element e,
+    # starting from the first character (index 0) up to the end of the text, effectively clearing the entry field or text box.
     if num_operator == '+':
+        # if num_operator == '+': The said line is a conditional statement that checks the variable num_operator
+        # whether it is equal to the string '+'.
         e.insert(0, f_num + int(second_number))
+        # This line of code inserts the result of an addition into an interface element e:
+        # usually an entry field in a GUI, using e.insert(0, f_num + int(second_number)).
     elif num_operator == '*':
+        # The line elif num_operator == '*': represents a conditional structure where
+        # the variable num_operator is being tested for equality to the string '*'. Normally, this comparison would be done 
+        # within a program that selects an arithmetic operation to perform based on user input or some set of predefined choices.
         e.insert(0, f_num * int(second_number))
+        # This line of code inserts the result of a multiplication operation into a GUI entry field e
+        # e.insert(0, f_num * int(second_number)).
     elif num_operator == '/':
+        # Line elseif num_operator == '/': is a part of a conditional structure; that normally
+        # can be found inside a function handling some arithmetic operation in
+        # a calculator application.
+        # This line specifically checks if the current operator-holding variable num_operator is a division operator /.
         e.insert(0, f_num / int(second_number))
+        # The line e.insert(0, f_num / int(second_number)) is responsible for displaying the result of a division operation
+        # in a GUI application such as a calculator.
     elif num_operator == '-':
+        # The line elif num_operator == '-': is another conditional statement that checks whether the operator chosen by the user is the
+        # minus operator -. This line would normally be part of a larger conditional structure within a function
+        #  aimed at performing arithmetic operations in an application, such as a calculator.
         e.insert(0, f_num - int(second_number))
+        # This line, e.insert(0, f_num - int(second_number)), is part of the logic that performs a subtraction operation in some GUI
+        # application-a calculator.
     else:
+        # The else: statement in Python is used to complete an if.elif chain of conditional statements and defines the block of code that
+        # will be executed when all the previous conditions are false.
         e.insert(0, "Invalid!!!")
+        #The line e.insert(0, "Invalid!!!") is a specific instruction usually appearing within user interface contexts, such as in
+        # a graphical calculator application implemented using Tkinter in Python. 
+        # It shows an error message for the user when any invalid input or operation has been detected.
 
 # 7 Document what the following lines of code do here
 #
