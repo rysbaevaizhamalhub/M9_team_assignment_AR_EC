@@ -25,8 +25,11 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 # 3 Document what the following lines of code do here
 def button_click(number):
     current = e.get()
+    # Gets the text currently displayed in the entry field
     e.delete(0, END)
+    # Clears the entry field to prepare for new input
     e.insert(0, str(current) + str(number))
+    # Appends the clicked number to the current text and display it in the entry field
 
 # 4 Document what the following lines of code do here
 def button_clear():
