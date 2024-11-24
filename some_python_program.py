@@ -15,7 +15,12 @@ root.title("Simple Calculator")
 
 # 2 Document what the following lines of code do here
 e = Entry(root, width=35, borderwidth=5)
+# The line e = Entry(root, width=35, borderwidth=5) creates an Entry widget of width 35 characters
+# and border width 5 pixels, placing it inside the parent widget root.
+
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+# The line e.grid(row=0, column=0, columnspan=3, padx=10, pady=10) places the Entry widget e in the grid
+# at the position of the 0th row and 0th column, spans it across 3 columns, and adds padding on all sides of 10 pixels.
 
 # 3 Document what the following lines of code do here
 def button_click(number):
