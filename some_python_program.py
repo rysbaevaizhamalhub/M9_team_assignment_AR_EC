@@ -42,11 +42,17 @@ def button_clear():
 # 5 Document what the following lines of code do here
 def button_operator(operator):
     first_number = e.get()
+    # Gets the number currently in the entry field
     global f_num
+    # Declares a global variable to store the first number for later use
     global num_operator
+    # Declares a global variable to store the chosen operator (e.g., +, -, *, /)
     f_num = int(first_number)
+    # Converts the first number to an integer and store it in 'f_num'
     num_operator = operator
+    # Stores the operator in 'num_operator' to be used in the calculation
     e.delete(0, END)
+    # Clear the entry field to allow the user to enter the second number
 
 # 6 Document what the following lines of code do here
 
