@@ -33,7 +33,11 @@ def button_click(number):
 
 # 4 Document what the following lines of code do here
 def button_clear():
+    # The line def button_clear(): This is defining a function named button_clear. When this function is called,
+    # a block of code indented underneath it will be executed; however, this depends on the implementation inside the function.
     e.delete(0, END)
+    # The line e.delete(0, END) deletes the text inside the Entry widget e,
+    # starting from index 0 (the beginning of the text) to END (the end of the text), effectively clearing the entire input field.
 
 # 5 Document what the following lines of code do here
 def button_operator(operator):
